@@ -1,0 +1,1738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Ambika 🎂❤️</title>
+
+    <style>
+        /* ================================================= */
+        /* ================= BASIC ========================= */
+        /* ================================================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            overflow: hidden;
+
+            background:
+                radial-gradient(circle at 20% 20%, #ffd5e3 0%, transparent 30%),
+                radial-gradient(circle at 80% 80%, #ffc4d7 0%, transparent 30%),
+                linear-gradient(135deg, #ffeaf1, #ffd9e5, #fff0f5);
+        }
+
+
+        /* ================================================= */
+        /* ================= PAGES ========================= */
+        /* ================================================= */
+
+        .page {
+            position: absolute;
+
+            width: 100%;
+            height: 100vh;
+
+            top: 0;
+            left: 0;
+
+            display: none;
+
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+
+            overflow: hidden;
+        }
+
+        .page.active {
+            display: flex;
+        }
+
+
+        /* ================================================= */
+        /* ================= GLOW ========================== */
+        /* ================================================= */
+
+        .glow {
+            position: absolute;
+
+            width: 450px;
+            height: 450px;
+
+            border-radius: 50%;
+
+            background: rgba(255, 120, 160, 0.20);
+
+            filter: blur(80px);
+        }
+
+
+        /* ================================================= */
+        /* ============== SHADOWY HEARTS =================== */
+        /* ================================================= */
+
+        .heart {
+            position: absolute;
+
+            color: rgba(211, 55, 105, 0.25);
+
+            font-size: 35px;
+
+            text-shadow:
+                0 0 10px rgba(255, 100, 150, 0.5),
+                0 0 25px rgba(255, 150, 180, 0.4);
+
+            animation: floatingHeart 8s linear infinite;
+
+            pointer-events: none;
+        }
+
+        .h1 {
+            left: 5%;
+            animation-delay: 0s;
+        }
+
+        .h2 {
+            left: 16%;
+            animation-delay: 2s;
+            font-size: 48px;
+        }
+
+        .h3 {
+            left: 28%;
+            animation-delay: 4s;
+        }
+
+        .h4 {
+            left: 40%;
+            animation-delay: 1s;
+            font-size: 42px;
+        }
+
+        .h5 {
+            left: 53%;
+            animation-delay: 3s;
+        }
+
+        .h6 {
+            left: 66%;
+            animation-delay: 5s;
+            font-size: 45px;
+        }
+
+        .h7 {
+            left: 80%;
+            animation-delay: 1.5s;
+        }
+
+        .h8 {
+            left: 92%;
+            animation-delay: 3.5s;
+        }
+
+        @keyframes floatingHeart {
+
+            0% {
+                transform: translateY(110vh) rotate(0deg);
+                opacity: 0;
+            }
+
+            15% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-120vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+
+        /* ================================================= */
+        /* ================= CARD ========================== */
+        /* ================================================= */
+
+        .card {
+            position: relative;
+
+            z-index: 10;
+
+            width: 90%;
+
+            max-width: 650px;
+
+            padding: 40px 25px;
+
+            border-radius: 35px;
+
+            background: rgba(255, 255, 255, 0.48);
+
+            backdrop-filter: blur(15px);
+
+            border: 1px solid rgba(255, 255, 255, 0.7);
+
+            box-shadow:
+                0 20px 50px rgba(180, 50, 95, 0.22),
+                inset 0 0 35px rgba(255, 170, 195, 0.35);
+        }
+
+
+        /* ================================================= */
+        /* ================= TEXT ========================== */
+        /* ================================================= */
+
+        .small-title {
+            color: #a43e62;
+
+            font-size: 17px;
+
+            letter-spacing: 3px;
+
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            color: #9f3159;
+
+            font-size: 45px;
+
+            text-shadow:
+                0 4px 15px rgba(150, 40, 80, 0.2);
+
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #a33b61;
+
+            font-size: 32px;
+
+            margin-bottom: 15px;
+        }
+
+        .quote {
+            color: #70404f;
+
+            font-size: 20px;
+
+            line-height: 1.7;
+
+            font-style: italic;
+
+            max-width: 550px;
+
+            margin: 15px auto 30px;
+        }
+
+
+        /* ================================================= */
+        /* ================= BUTTON ======================== */
+        /* ================================================= */
+
+        .next-btn {
+
+            border: none;
+
+            padding: 15px 32px;
+
+            border-radius: 40px;
+
+            background: #a83259;
+
+            color: white;
+
+            font-family: Georgia, serif;
+
+            font-size: 17px;
+
+            cursor: pointer;
+
+            box-shadow:
+                0 8px 20px rgba(150, 35, 80, 0.35);
+
+            transition: 0.3s;
+        }
+
+        .next-btn:hover {
+
+            transform: translateY(-4px) scale(1.05);
+
+            background: #8e2549;
+
+            box-shadow:
+                0 12px 30px rgba(150, 35, 80, 0.45);
+        }
+
+
+        /* ================================================= */
+        /* ============== PASSWORD PAGE ==================== */
+        /* ================================================= */
+
+        .password-card {
+
+            position: relative;
+
+            z-index: 10;
+
+            width: 90%;
+
+            max-width: 390px;
+
+            padding: 35px 25px;
+
+            border-radius: 35px;
+
+            background: rgba(255, 255, 255, 0.55);
+
+            backdrop-filter: blur(18px);
+
+            border: 1px solid rgba(255, 255, 255, 0.8);
+
+            box-shadow:
+                0 20px 55px rgba(170, 45, 90, 0.25),
+                inset 0 0 30px rgba(255, 170, 195, 0.35);
+        }
+
+
+        /* Lock icon */
+
+        .lock-icon {
+
+            font-size: 55px;
+
+            margin-bottom: 10px;
+
+            animation: lockGlow 2s ease-in-out infinite;
+        }
+
+        @keyframes lockGlow {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.08);
+            }
+        }
+
+
+        .password-title {
+
+            color: #9f3159;
+
+            font-size: 28px;
+
+            margin-bottom: 8px;
+        }
+
+        .password-subtitle {
+
+            color: #70404f;
+
+            font-size: 16px;
+
+            margin-bottom: 20px;
+        }
+
+
+        /* Password display */
+
+        .password-display {
+
+            width: 210px;
+
+            height: 48px;
+
+            margin: 0 auto 18px;
+
+            border-radius: 25px;
+
+            background: rgba(255, 255, 255, 0.75);
+
+            border: 2px solid rgba(168, 50, 89, 0.25);
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            color: #9f3159;
+
+            font-size: 25px;
+
+            letter-spacing: 8px;
+
+            box-shadow:
+                inset 0 3px 10px rgba(150, 50, 90, 0.08);
+        }
+
+
+        /* Message */
+
+        .password-message {
+
+            min-height: 24px;
+
+            color: #a83259;
+
+            font-size: 14px;
+
+            margin-bottom: 10px;
+
+            font-weight: bold;
+        }
+
+
+        /* Keypad */
+
+        .keypad {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 65px);
+
+            justify-content: center;
+
+            gap: 10px;
+
+            margin: auto;
+        }
+
+
+        .key {
+
+            width: 65px;
+
+            height: 55px;
+
+            border: none;
+
+            border-radius: 18px;
+
+            background: rgba(255, 255, 255, 0.85);
+
+            color: #963253;
+
+            font-family: Georgia, serif;
+
+            font-size: 20px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            box-shadow:
+                0 5px 12px rgba(150, 40, 80, 0.18);
+
+            transition: 0.2s;
+        }
+
+        .key:hover {
+
+            background: #ffd0df;
+
+            transform: scale(1.05);
+        }
+
+        .key:active {
+
+            transform: scale(0.92);
+        }
+
+
+        /* OK button */
+
+        .ok-button {
+
+            width: 140px;
+
+            height: 48px;
+
+            margin-top: 18px;
+
+            border: none;
+
+            border-radius: 30px;
+
+            background: #a83259;
+
+            color: white;
+
+            font-family: Georgia, serif;
+
+            font-size: 17px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            box-shadow:
+                0 8px 18px rgba(150, 35, 80, 0.30);
+
+            transition: 0.3s;
+        }
+
+        .ok-button:hover {
+
+            background: #8e2549;
+
+            transform: scale(1.05);
+        }
+
+
+        /* ================================================= */
+        /* ================= PHOTO ========================= */
+        /* ================================================= */
+
+        .photo-frame {
+
+            width: 210px;
+
+            height: 310px;
+
+            margin: 15px auto 25px;
+
+            padding: 8px;
+
+            background:
+                linear-gradient(135deg,
+                    #ffffff,
+                    #ffc5d7,
+                    #ffffff);
+
+            border-radius: 25px;
+
+            box-shadow:
+                0 12px 35px rgba(150, 45, 85, 0.35),
+                0 0 30px rgba(255, 140, 180, 0.45);
+
+            transform: rotate(-2deg);
+
+            animation: photoGlow 3s ease-in-out infinite;
+        }
+
+        .photo-frame img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            border-radius: 18px;
+        }
+
+        @keyframes photoGlow {
+
+            0%,
+            100% {
+
+                box-shadow:
+                    0 12px 35px rgba(150, 45, 85, 0.35),
+                    0 0 20px rgba(255, 140, 180, 0.35);
+            }
+
+            50% {
+
+                box-shadow:
+                    0 12px 35px rgba(150, 45, 85, 0.45),
+                    0 0 40px rgba(255, 140, 180, 0.65);
+            }
+        }
+
+
+        /* ================================================= */
+        /* ============== FALLING HEARTS =================== */
+        /* ================================================= */
+
+        .falling {
+
+            position: absolute;
+
+            top: -50px;
+
+            font-size: 25px;
+
+            animation: falling 5s linear infinite;
+
+            z-index: 2;
+        }
+
+        @keyframes falling {
+
+            0% {
+
+                transform:
+                    translateY(-60px) rotate(0deg);
+
+                opacity: 0;
+            }
+
+            10% {
+
+                opacity: 1;
+            }
+
+            100% {
+
+                transform:
+                    translateY(110vh) rotate(720deg);
+
+                opacity: 0;
+            }
+        }
+
+        .f1 {
+            left: 5%;
+            animation-delay: 0s;
+        }
+
+        .f2 {
+            left: 15%;
+            animation-delay: 1s;
+        }
+
+        .f3 {
+            left: 25%;
+            animation-delay: 2s;
+        }
+
+        .f4 {
+            left: 35%;
+            animation-delay: 0.5s;
+        }
+
+        .f5 {
+            left: 45%;
+            animation-delay: 1.8s;
+        }
+
+        .f6 {
+            left: 55%;
+            animation-delay: 3s;
+        }
+
+        .f7 {
+            left: 65%;
+            animation-delay: 1.2s;
+        }
+
+        .f8 {
+            left: 75%;
+            animation-delay: 2.5s;
+        }
+
+        .f9 {
+            left: 85%;
+            animation-delay: 0.8s;
+        }
+
+        .f10 {
+            left: 95%;
+            animation-delay: 3.2s;
+        }
+
+
+        /* ================================================= */
+        /* ==================== CAKE ======================= */
+        /* ================================================= */
+
+        .cake-area {
+
+            position: relative;
+
+            width: 330px;
+
+            height: 330px;
+
+            margin: 0 auto;
+        }
+
+
+        /* ================= PLATE ================= */
+
+        .plate {
+
+            position: absolute;
+
+            width: 340px;
+
+            height: 18px;
+
+            left: -5px;
+
+            bottom: 20px;
+
+            background: white;
+
+            border-radius: 50%;
+
+            box-shadow:
+                0 7px 15px rgba(120, 30, 60, 0.25);
+        }
+
+
+        /* ================= BOTTOM LAYER ================= */
+
+        .cake-bottom {
+
+            position: absolute;
+
+            width: 300px;
+
+            height: 75px;
+
+            left: 15px;
+
+            bottom: 38px;
+
+            background:
+                linear-gradient(#e87598,
+                    #c94d72);
+
+            border-radius: 15px 15px 20px 20px;
+
+            box-shadow:
+                0 8px 15px rgba(120, 30, 60, 0.25);
+
+            opacity: 0;
+
+            transform:
+                translateY(100px) scale(0.7);
+
+            z-index: 1;
+        }
+
+
+        /* ================= MIDDLE LAYER ================= */
+
+        .cake-middle {
+
+            position: absolute;
+
+            width: 245px;
+
+            height: 65px;
+
+            left: 42px;
+
+            bottom: 112px;
+
+            background:
+                linear-gradient(#ffabc2,
+                    #e76c91);
+
+            border-radius: 15px 15px 18px 18px;
+
+            box-shadow:
+                0 7px 12px rgba(120, 30, 60, 0.20);
+
+            opacity: 0;
+
+            transform:
+                translateY(100px) scale(0.7);
+
+            z-index: 2;
+        }
+
+
+        /* ================= TOP LAYER ================= */
+
+        .cake-top {
+
+            position: absolute;
+
+            width: 190px;
+
+            height: 58px;
+
+            left: 70px;
+
+            bottom: 177px;
+
+            background:
+                linear-gradient(#ffd0dd,
+                    #f18aaa);
+
+            border-radius: 15px 15px 18px 18px;
+
+            box-shadow:
+                0 6px 12px rgba(120, 30, 60, 0.18);
+
+            opacity: 0;
+
+            transform:
+                translateY(100px) scale(0.7);
+
+            z-index: 3;
+        }
+
+
+        /* ================= CAKE DECORATION ================= */
+
+        .cake-bottom::before,
+        .cake-middle::before,
+        .cake-top::before {
+
+            content: "♥  ♥  ♥  ♥  ♥";
+
+            position: absolute;
+
+            width: 100%;
+
+            left: 0;
+
+            top: 22px;
+
+            color: white;
+
+            font-size: 16px;
+
+            letter-spacing: 5px;
+        }
+
+
+        /* ================================================= */
+        /* ================= CAKE ANIMATION ================ */
+        /* ================================================= */
+
+        .cake-bottom.show {
+
+            animation:
+                cakeBottomAppear 1s ease forwards;
+        }
+
+        @keyframes cakeBottomAppear {
+
+            0% {
+                opacity: 0;
+
+                transform:
+                    translateY(100px) scale(0.7);
+            }
+
+            60% {
+                transform:
+                    translateY(-10px) scale(1.05);
+            }
+
+            100% {
+                opacity: 1;
+
+                transform:
+                    translateY(0) scale(1);
+            }
+        }
+
+
+        .cake-middle.show {
+
+            animation:
+                cakeMiddleAppear 1s ease forwards;
+        }
+
+        @keyframes cakeMiddleAppear {
+
+            0% {
+                opacity: 0;
+
+                transform:
+                    translateY(100px) scale(0.7);
+            }
+
+            60% {
+                transform:
+                    translateY(-8px) scale(1.05);
+            }
+
+            100% {
+                opacity: 1;
+
+                transform:
+                    translateY(0) scale(1);
+            }
+        }
+
+
+        .cake-top.show {
+
+            animation:
+                cakeTopAppear 1s ease forwards;
+        }
+
+        @keyframes cakeTopAppear {
+
+            0% {
+                opacity: 0;
+
+                transform:
+                    translateY(100px) scale(0.7);
+            }
+
+            60% {
+                transform:
+                    translateY(-8px) scale(1.05);
+            }
+
+            100% {
+                opacity: 1;
+
+                transform:
+                    translateY(0) scale(1);
+            }
+        }
+
+
+        /* ================================================= */
+        /* ==================== CANDLE ===================== */
+        /* ================================================= */
+
+        .candle {
+
+            position: absolute;
+
+            width: 18px;
+
+            height: 60px;
+
+            left: 156px;
+
+            /*
+       Directly sitting on top cake
+    */
+
+            top: 54px;
+
+            background:
+                repeating-linear-gradient(45deg,
+                    #ff9fbd,
+                    #ff9fbd 7px,
+                    white 7px,
+                    white 13px);
+
+            border-radius: 5px;
+
+            opacity: 0;
+
+            transform:
+                translateY(30px);
+
+            z-index: 5;
+        }
+
+        .candle.show {
+
+            animation:
+                candleAppear 0.8s ease forwards;
+        }
+
+        @keyframes candleAppear {
+
+            0% {
+
+                opacity: 0;
+
+                transform:
+                    translateY(30px) scale(0.7);
+            }
+
+            100% {
+
+                opacity: 1;
+
+                transform:
+                    translateY(0) scale(1);
+            }
+        }
+
+
+        /* ================================================= */
+        /* ===================== FLAME ===================== */
+        /* ================================================= */
+
+        .flame {
+
+            position: absolute;
+
+            width: 22px;
+
+            height: 32px;
+
+            left: 154px;
+
+            top: 22px;
+
+            background: #ffb300;
+
+            border-radius: 50%;
+
+            box-shadow:
+                0 0 10px #ff9900,
+                0 0 25px #ffb300,
+                0 0 45px #ffcc55;
+
+            opacity: 0;
+
+            z-index: 6;
+        }
+
+        .flame.show {
+
+            animation:
+                flameBlink 0.8s infinite alternate;
+        }
+
+        @keyframes flameBlink {
+
+            from {
+
+                transform:
+                    scale(0.8) translateY(2px);
+
+                opacity: 0.75;
+            }
+
+            to {
+
+                transform:
+                    scale(1.1) translateY(-2px);
+
+                opacity: 1;
+            }
+        }
+
+
+        /* ================================================= */
+        /* ================= FINAL TEXT ==================== */
+        /* ================================================= */
+
+        .final-quote {
+
+            color: #70404f;
+
+            font-size: 19px;
+
+            line-height: 1.5;
+
+            font-style: italic;
+
+            margin: 0 auto 5px;
+
+            max-width: 520px;
+        }
+
+        .signature {
+
+            margin-top: 5px;
+
+            color: #8e3655;
+
+            font-size: 19px;
+
+            font-style: italic;
+        }
+
+
+        /* ================================================= */
+        /* ================= MOBILE ======================== */
+        /* ================================================= */
+
+        @media(max-width:600px) {
+
+            h1 {
+                font-size: 34px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            .quote {
+                font-size: 17px;
+            }
+
+            .card {
+                padding: 28px 18px;
+            }
+
+            .photo-frame {
+
+                width: 170px;
+
+                height: 245px;
+            }
+
+            .cake-area {
+
+                transform: scale(0.78);
+
+                margin-top: -25px;
+
+                margin-bottom: -30px;
+            }
+
+            .final-quote {
+
+                font-size: 17px;
+            }
+
+            .password-card {
+
+                padding: 30px 18px;
+            }
+
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- ================================================= -->
+    <!-- PASSWORD PAGE -->
+    <!-- ================================================= -->
+
+    <section class="page active" id="passwordPage">
+
+        <div class="glow"></div>
+
+        <!-- Shadowy Hearts -->
+
+        <div class="heart h1">♥</div>
+        <div class="heart h2">♡</div>
+        <div class="heart h3">♥</div>
+        <div class="heart h4">♡</div>
+        <div class="heart h5">♥</div>
+        <div class="heart h6">♡</div>
+        <div class="heart h7">♥</div>
+        <div class="heart h8">♡</div>
+
+
+        <div class="password-card">
+
+            <div class="lock-icon">
+                🔐
+            </div>
+
+            <h2 class="password-title">
+                Secret Surprise
+            </h2>
+
+            <p class="password-subtitle">
+                Enter the password to unlock your surprise 💗
+            </p>
+
+
+            <!-- PASSWORD DISPLAY -->
+
+            <div class="password-display" id="passwordDisplay">
+
+                • • • •
+
+            </div>
+
+
+            <!-- MESSAGE -->
+
+            <div class="password-message" id="passwordMessage">
+
+            </div>
+
+
+            <!-- KEYPAD -->
+
+            <div class="keypad">
+
+                <button class="key" onclick="pressNumber('1')">
+                    1
+                </button>
+
+                <button class="key" onclick="pressNumber('2')">
+                    2
+                </button>
+
+                <button class="key" onclick="pressNumber('3')">
+                    3
+                </button>
+
+
+                <button class="key" onclick="pressNumber('4')">
+                    4
+                </button>
+
+                <button class="key" onclick="pressNumber('5')">
+                    5
+                </button>
+
+                <button class="key" onclick="pressNumber('6')">
+                    6
+                </button>
+
+
+                <button class="key" onclick="pressNumber('7')">
+                    7
+                </button>
+
+                <button class="key" onclick="pressNumber('8')">
+                    8
+                </button>
+
+                <button class="key" onclick="pressNumber('9')">
+                    9
+                </button>
+
+
+                <button class="key" onclick="deleteNumber()">
+                    ⌫
+                </button>
+
+                <button class="key" onclick="pressNumber('0')">
+                    0
+                </button>
+
+                <button class="key" onclick="clearPassword()">
+                    C
+                </button>
+
+            </div>
+
+
+            <!-- OK BUTTON -->
+
+            <button class="ok-button" onclick="checkPassword()">
+
+                OK ❤️
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!-- PAGE 1 : SURPRISE -->
+    <!-- ================================================= -->
+
+    <section class="page" id="page1">
+
+        <div class="glow"></div>
+
+        <div class="heart h1">♥</div>
+        <div class="heart h2">♡</div>
+        <div class="heart h3">♥</div>
+        <div class="heart h4">♡</div>
+        <div class="heart h5">♥</div>
+        <div class="heart h6">♡</div>
+        <div class="heart h7">♥</div>
+        <div class="heart h8">♡</div>
+
+
+        <div class="card">
+
+            <div class="small-title">
+                💗 A LITTLE SURPRISE FOR YOU 💗
+            </div>
+
+            <h1>
+                Ambika ❤️
+            </h1>
+
+            <p class="quote">
+
+                "Some surprises are wrapped in gifts,
+                but the best ones are wrapped in
+                beautiful memories and friendship." ✨
+
+            </p>
+
+            <p class="quote">
+
+                I have a little birthday surprise
+                waiting just for you... 🎀
+
+            </p>
+
+            <button class="next-btn" onclick="nextPage(2)">
+
+                Click to Next 💕
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!-- PAGE 2 : PHOTO -->
+    <!-- ================================================= -->
+
+    <section class="page" id="page2">
+
+        <div class="heart h1">♥</div>
+        <div class="heart h2">♡</div>
+        <div class="heart h3">♥</div>
+        <div class="heart h4">♡</div>
+        <div class="heart h5">♥</div>
+        <div class="heart h6">♡</div>
+        <div class="heart h7">♥</div>
+        <div class="heart h8">♡</div>
+
+
+        <!-- Falling Hearts -->
+
+        <div class="falling f1">💗</div>
+        <div class="falling f2">❤️</div>
+        <div class="falling f3">💕</div>
+        <div class="falling f4">💖</div>
+        <div class="falling f5">💗</div>
+        <div class="falling f6">❤️</div>
+        <div class="falling f7">💕</div>
+        <div class="falling f8">💖</div>
+        <div class="falling f9">💗</div>
+        <div class="falling f10">❤️</div>
+
+
+        <div class="card">
+
+            <div class="small-title">
+                🎉 THE CELEBRATION BEGINS 🎉
+            </div>
+
+            <h2>
+                Happy Birthday Ambika! 🎂
+            </h2>
+
+
+            <!-- PHOTO -->
+
+            <div class="photo-frame">
+
+                <img src="Ambika.jpeg" alt="Ambika">
+
+            </div>
+
+
+            <p class="quote">
+
+                "A true friend makes ordinary moments
+                feel special and turns memories
+                into treasures." 💗
+
+            </p>
+
+
+            <button class="next-btn" onclick="lightCandle()">
+
+                Click to Light the Candle 🕯️
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!-- PAGE 3 : CAKE -->
+    <!-- ================================================= -->
+
+    <section class="page" id="page3">
+
+        <div class="heart h1">♥</div>
+        <div class="heart h2">♡</div>
+        <div class="heart h3">♥</div>
+        <div class="heart h4">♡</div>
+        <div class="heart h5">♥</div>
+        <div class="heart h6">♡</div>
+        <div class="heart h7">♥</div>
+        <div class="heart h8">♡</div>
+
+
+        <!-- Falling Hearts -->
+
+        <div class="falling f1">💖</div>
+        <div class="falling f2">✨</div>
+        <div class="falling f3">💗</div>
+        <div class="falling f4">🌸</div>
+        <div class="falling f5">💕</div>
+        <div class="falling f6">✨</div>
+        <div class="falling f7">💖</div>
+        <div class="falling f8">🌸</div>
+        <div class="falling f9">💗</div>
+        <div class="falling f10">💕</div>
+
+
+        <div class="card">
+
+            <div class="small-title">
+                🎂 MAKE A WISH, AMBIKA! 🎂
+            </div>
+
+
+            <p class="final-quote">
+
+                "May your birthday bring endless smiles,
+                beautiful memories, and happiness.
+                Stay blessed and keep shining! ❤️"
+
+            </p>
+
+
+            <!-- CAKE -->
+
+            <div class="cake-area">
+
+                <!-- Plate -->
+
+                <div class="plate"></div>
+
+
+                <!-- Bottom Layer -->
+
+                <div class="cake-bottom" id="cakeBottom">
+                </div>
+
+
+                <!-- Middle Layer -->
+
+                <div class="cake-middle" id="cakeMiddle">
+                </div>
+
+
+                <!-- Top Layer -->
+
+                <div class="cake-top" id="cakeTop">
+                </div>
+
+
+                <!-- Candle -->
+
+                <div class="candle" id="candle">
+                </div>
+
+
+                <!-- Flame -->
+
+                <div class="flame" id="flame">
+                </div>
+
+            </div>
+
+
+            <h2>
+                Happy Birthday Ambika! 🎉❤️
+            </h2>
+
+
+            <p class="signature">
+
+                With Love,<br>
+
+                <b>Ayesha Begum</b> ❤️
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ================================================= -->
+
+    <script>
+
+
+        /* ================================================= */
+        /* ================= PASSWORD ====================== */
+        /* ================================================= */
+
+        let enteredPassword = "";
+
+        const correctPassword = "2809";
+
+
+        function pressNumber(number) {
+
+            /*
+               Only allow 4 numbers
+            */
+
+            if (enteredPassword.length < 4) {
+
+                enteredPassword += number;
+
+                updatePasswordDisplay();
+
+            }
+        }
+
+
+        function updatePasswordDisplay() {
+
+            const display =
+                document.getElementById("passwordDisplay");
+
+
+            let dots = "";
+
+            for (
+                let i = 0;
+                i < enteredPassword.length;
+                i++
+            ) {
+
+                dots += "● ";
+
+            }
+
+
+            for (
+                let i = enteredPassword.length;
+                i < 4;
+                i++
+            ) {
+
+                dots += "○ ";
+
+            }
+
+
+            display.innerHTML = dots;
+        }
+
+
+        function deleteNumber() {
+
+            enteredPassword =
+                enteredPassword.slice(0, -1);
+
+            updatePasswordDisplay();
+
+            document.getElementById(
+                "passwordMessage"
+            ).innerHTML = "";
+        }
+
+
+        function clearPassword() {
+
+            enteredPassword = "";
+
+            updatePasswordDisplay();
+
+            document.getElementById(
+                "passwordMessage"
+            ).innerHTML = "";
+        }
+
+
+        /* ================================================= */
+        /* ============== CHECK PASSWORD =================== */
+        /* ================================================= */
+
+        function checkPassword() {
+
+            const message =
+                document.getElementById(
+                    "passwordMessage"
+                );
+
+
+            if (enteredPassword === correctPassword) {
+
+                message.innerHTML =
+                    "Password Correct! 💗";
+
+
+                setTimeout(function () {
+
+                    nextPage(1);
+
+                }, 600);
+
+            }
+
+            else {
+
+                message.innerHTML =
+                    "Incorrect Password! Try Again 💕";
+
+
+                setTimeout(function () {
+
+                    enteredPassword = "";
+
+                    updatePasswordDisplay();
+
+                    message.innerHTML = "";
+
+                }, 1000);
+
+            }
+
+        }
+
+
+        /* ================================================= */
+        /* ================= PAGE CHANGE =================== */
+        /* ================================================= */
+
+        function nextPage(pageNumber) {
+
+            document
+                .querySelectorAll(".page")
+                .forEach(function (page) {
+
+                    page.classList.remove("active");
+
+                });
+
+
+            document
+                .getElementById("page" + pageNumber)
+                .classList.add("active");
+        }
+
+
+        /* ================================================= */
+        /* ============== PAGE 2 → PAGE 3 ================== */
+        /* ================================================= */
+
+        function lightCandle() {
+
+            const button =
+                document.querySelector(
+                    "#page2 .next-btn"
+                );
+
+
+            button.innerHTML =
+                "Lighting the Candle... 🕯️";
+
+
+            button.disabled = true;
+
+
+            setTimeout(function () {
+
+                nextPage(3);
+
+                startCakeAnimation();
+
+            }, 700);
+
+        }
+
+
+        /* ================================================= */
+        /* ================= CAKE ANIMATION ================ */
+        /* ================================================= */
+
+        function startCakeAnimation() {
+
+            const bottom =
+                document.getElementById(
+                    "cakeBottom"
+                );
+
+
+            const middle =
+                document.getElementById(
+                    "cakeMiddle"
+                );
+
+
+            const top =
+                document.getElementById(
+                    "cakeTop"
+                );
+
+
+            const candle =
+                document.getElementById(
+                    "candle"
+                );
+
+
+            const flame =
+                document.getElementById(
+                    "flame"
+                );
+
+
+            /* STEP 1
+               Bottom cake */
+
+            setTimeout(function () {
+
+                bottom.classList.add("show");
+
+            }, 300);
+
+
+            /* STEP 2
+               Middle cake */
+
+            setTimeout(function () {
+
+                middle.classList.add("show");
+
+            }, 1500);
+
+
+            /* STEP 3
+               Top cake */
+
+            setTimeout(function () {
+
+                top.classList.add("show");
+
+            }, 2700);
+
+
+            /* STEP 4
+               Candle */
+
+            setTimeout(function () {
+
+                candle.classList.add("show");
+
+            }, 3900);
+
+
+            /* STEP 5
+               Flame */
+
+            setTimeout(function () {
+
+                flame.classList.add("show");
+
+            }, 4700);
+
+        }
+
+    </script>
+
+</body>
+
+</html>
